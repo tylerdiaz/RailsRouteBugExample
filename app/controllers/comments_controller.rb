@@ -57,6 +57,10 @@ class CommentsController < ApplicationController
     end
   end
 
+  def approved
+    render json: { success: true }, status: :ok
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
